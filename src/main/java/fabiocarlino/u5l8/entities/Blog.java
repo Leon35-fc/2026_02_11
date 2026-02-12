@@ -23,7 +23,7 @@ public class Blog {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
     @ManyToOne
-    @JoinColumn(name = "", nullable = false)
+    @JoinColumn(name = "authorId", nullable = false)
     private Author author;
 
     public Blog() {
